@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 100px auto;
+            grid-template-columns: 200px auto;
+            border: 1px solid;
+            height: 600px;
+        }
+        .item1,.item2,.item3,.item3{
+            border: 1px solid;
+        }
+        .item1 img{
+            width: 80px;
+            height: 100px;
+            margin-left: 40px;
+            
+        }
+       
+        .item3 h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"><img src="./Untitled design.jpg" alt=""></div>
+        <div class="item2"></div>
+        <div class="item3">
+            <h3>Sections</h3>
+            <ul>
+                <li> <a href="#content">About</a></li>
+                <li>Education</li>
+                <li>Projects</li>
+                <li>Skills</li>
+                <li>certificates</li>
+            </ul>
+        </div>
+        <div  id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rem eius nemo corporis inventore veritatis odit quae dolores esse excepturi!
+        </div>
+
+    </div>
+</body>
+</html>
