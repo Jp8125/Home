@@ -8,6 +8,15 @@
   height: 100%;
 }
 #main-header .port-item {
-  width: 35%;
-  font-size: 1.5em;
+  width: 25%;
+  font-size: 2em;
+}
+#main-header .port-item:hover {
+  opacity: 0.8;
+}
+@media (min-width: 1199px) {
+  #main-header .port-item {
+    padding: 3em !important;
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */
