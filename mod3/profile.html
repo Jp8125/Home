@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="nav1">
         <ul class="navbar-nav">
           <li class="nav-item px-2">
-            <a href="index.html" class="nav-link ">Dashboard</a>
+            <a href="index.html" class="nav-link">Dashboard</a>
           </li>
           <li class="nav-item px-2">
             <a href="post.html" class="nav-link ">Post</a>
@@ -37,7 +37,7 @@
             <a href="category.html" class="nav-link ">Category</a>
           </li>
           <li class="nav-item px-2">
-            <a href="users.html" class="nav-link active">Users</a>
+            <a href="users.html" class="nav-link ">Users</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -60,104 +60,65 @@
       </div>
     </div>
    </nav>
- <header id="main-header" class="py-2 bg-success text-white">
+ <header id="main-header" class="py-2 bg-primary text-white">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1><i class="fa fa-users"></i>Users</h1>
+        <h1><i class="fa fa-user"></i>Edit profile</h1>
       </div>
     </div>
   </div>
  </header>
-
-  <main>
-    <section id="action" class="py-4 mb-4 bg-light">
-      <div class="container">
+<section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
         <div class="row">
-          <div class="col-md-6 ms-auto">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="search">
-              <span class="input-group-btn">
-                <button class="btn btn-success">search</button>
-              </span>
+            <div class="col-md-3 me-auto">
+                <a href="index.html" class="btn btn-primary btn-block"><i class="fa fa-arrow-left"></i> Back to Dashboard</a>
             </div>
-          </div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-success  btn-block"><i class="fa fa-lock" data-bs-toggle="modal" data-bs-target="#passmodal"></i> change Password</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-danger btn-block" ><i class="fa fa-remove"></i> Delete Account</a>
+            </div>
         </div>
-      </div>
-    </section>
-    <section id="posts" class="mt-5">
+    </div>
+</section>
+  <main>
+    <!-- profile edit -->
+    <section id="profile" class="mt-5">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-md-9">
             <div class="card">
               <div class="card-header">
-                <h4>Latest Users</h4>
+                <h4>Edit Poasts</h4>
               </div>
-              <table class="table table-striped">
-                <thead class="thead-dark">
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">1</td>
-               
-                    <td>Jhon Doe</td>
-                    <td>jd56@gmail.com</td>
-                   
-                  </tr>
-                  <tr>
-                    <td scope="row">2</td>
-                   
-                    <td>jay</td>
-                    <td>jp@gmail.com</td>
+              <div class="card-body">
+                <form >
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" value="jp">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" value="jp@gmail.com">
+                    </div>
                     
-                  </tr>
-                  <tr>
-                    <td scope="row">3</td>
-             
-                    <td>alice</td>
-                    <td>feb 1, 2023</td>
-                   
-                  </tr>
-                  <tr>
-                    <td scope="row">4</td>
-                   
-                    <td>mobile devlopment</td>
-                    <td>feb 21, 2023</td>
-                   
-                  </tr>
-                  
-                
-                </tbody>
-               
-                
-              </table>
-              <nav class="ms-4">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a href="#" class="page-link disabled">previous</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link active">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link ">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link ">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link ">Next</a>
-                  </li>
-                </ul>
-              </nav>
+                    <div class="form-group">
+                        <label for="body">Bio</label>
+                        <textarea name="editor1" class="form-control"></textarea>
+                    </div>
+                </form>
+              </div>
             </div>
           </div>
-          
+         <div class="col-md-3">
+            <h3>Avatar</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCayD_Vn6qzE94Swk2ShquewpTCH_x2_p-x6Txgeiw&s" alt="no image">
+            <button class="btn btn-primary btn-block">Edit Image</button>
+            <button class="btn btn-danger btn-block">Delete Image</button>
+         </div>
         </div>
       </div>
      </section>
@@ -174,6 +135,34 @@
     </div>
     <!-- place footer here -->
   </footer>
+  <div class="modal fade" id="passmodal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="model-title">Change Password</h5>
+                <button class="close" data-dissmiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Password</label>
+                        <input type="Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">confirm Password</label>
+                        <input type="Password" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dissmiss="modal">close</button>
+                <button class="btn btn-warning" data-dissmiss="modal">update password</button>
+            </div>
+        </div>
+    </div>
+  </div>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

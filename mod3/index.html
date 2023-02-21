@@ -37,9 +37,6 @@
             <a href="category.html" class="nav-link ">Category</a>
           </li>
           <li class="nav-item px-2">
-            <a href="post.html" class="nav-link ">Post</a>
-          </li>
-          <li class="nav-item px-2">
             <a href="users.html" class="nav-link ">Users</a>
           </li>
         </ul>
@@ -54,7 +51,7 @@
               <a href="settings.html" class="dropdown-item">
                 <i class="fa fa-gear"></i> settings
               </a>
-              <a href="profile.html" class="dropdown-item">
+              <a href="logout.html" class="dropdown-item">
                 <i class="fa fa-user-times"></i> logout
               </a>
             </div>
@@ -72,8 +69,26 @@
     </div>
   </div>
  </header>
-
+    
   <main>
+    <section class="mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3">
+                  <a href="#" class="btn btn-primary btn-block" data-bs-toggle="modal"
+                  data-target="#addpost"><i class="fa fa-plus"></i> Add Post</a>
+              </div>
+              <div class="col-md-3">
+                  <a href="#" class="btn btn-warning btn-block" data-bs-toggle="modal"
+                  data-target="#addcategory"><i class="fa fa-plus"></i> Add category</a>
+              </div>
+              <div class="col-md-3">
+                  <a href="#" class="btn btn-success btn-block" data-bs-toggle="modal"
+                  data-target="#adduser"><i class="fa fa-plus"></i> Add User</a>
+              </div>
+          </div>
+      </div>
+    </section>
     <section id="posts" class="mt-5">
       <div class="container">
         <div class="row">
@@ -89,7 +104,6 @@
                     <th>Title</th>
                     <th>Category</th>
                     <th>Date Posted</th>
-                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
