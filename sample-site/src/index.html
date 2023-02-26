@@ -9,9 +9,35 @@
 
 <body>
     <div class="w-full fixed bg-white">
-        <nav class=" md:h-20 md:flex  justify-between items-center">
-            <img class="w-20 h-14" src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-            <ul class="flex flex-col md:flex-row space-x-28">
+        <nav class="py-10 bg-white text-violet-400 block sm:flex justify-between items-center px-2">
+            <div class="flex justify-between">
+              <img
+                class="w-20 h-14"
+                src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                alt=""
+              />
+              <div
+                class="cursor-pointer px-2 sm:hidden flex items-center"
+                id="icon"
+              >
+                <svg
+                  class="w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+  
+            <ul id="navb" class="hidden sm:flex md:space-x-5 lg:space-x-28">
                 <li>HOME</li>
                 <li>BLOG</li>
                 <li>FEATURES</li>
@@ -22,10 +48,11 @@
                 <li>Portfolio</li>
                 <li></li>
             </ul>
-        </nav>
+          </nav>
+      
     </div>
-    <div class="bg-green-100">
-        <div class="container lg:mx-auto py-20">
+    <div class="bg-green-100 px-2">
+        <div class="container lg:mx-auto py-40">
             <div class="flex justify-between overflow-x-scroll lg:overflow-hidden">
                 <img class=" md:w-52 lg:w-96 md:mt-10" src="https://images.unsplash.com/photo-1535427279878-d351bbe0fadc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHdvbWVuJTIwd2l0aCUyMGNhbWVyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
                 <img class="md:w-52 lg:w-96" src="https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGVhdmVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
